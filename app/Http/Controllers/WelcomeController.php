@@ -17,21 +17,58 @@ class WelcomeController extends Controller
 
         $home_content=view('pages.home_content');
 
-        return view('master')->with('main_content',$home_content);
+        $sidebar=view('pages.sidebar');
+
+        return view('master')->with('main_content',$home_content)
+                                  ->with('sidebar',$sidebar);
+
     }
     public function blog_read_more(){
+        $blog_details=view('pages.read_more');
+        $sidebar=view('pages.sidebar');
+        //$sidebar=0;
+        return view('master')->with('main_content',$blog_details)
+                                       ->with('sidebar',$sidebar);
 
-        echo "This is Read More";
+
+
+
+    }
+    public function blog(){
+        $blog=view('pages.blog');
+        $sidebar=view('pages.sidebar');
+
+        return view('master')->with('main_content',$blog)
+                                  ->with('sidebar',$sidebar);
+    }
+    public function about(){
+
+        $about=view('pages.about');
+        $sidebar=view('pages.sidebar');
+        return view('master')->with('main_content',$about)
+            ->with('sidebar',$sidebar);
+
+
+
 
     }
     public function contact(){
 
-        echo "This is Contact";
+        //echo "This is Contact";
+        $contact=view('pages.contact');
+
+        return view('master')->with('main_content',$contact);
+
+
 
     }
     public function support(){
 
-        echo "THis is Support";
+       $support=view('pages.support');
+        $sidebar=view('pages.sidebar');
+        return view('master')->with('main_content',$support)
+            ->with('sidebar',$sidebar);
+
     }
 
     /**

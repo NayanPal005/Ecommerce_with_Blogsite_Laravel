@@ -1,20 +1,19 @@
-@extends('master)
+@extends('master')
 @section('main_content')
-
 
 <div class="article">
     <h2>3 Responses</h2>
-    <div class="comment"> <a href="#"><img src="images/userpic.gif" width="40" height="40" alt="" class="userpic" /></a>
+    <div class="comment"> <a href="#"><img src="{{asset('public/front_end_asset/images/userpic.gif')}}" width="40" height="40" alt="" class="userpic" /></a>
         <p><a href="#">admin</a> Says:<br />
             April 20th, 2009 at 2:17 pm</p>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.</p>
     </div>
-    <div class="comment"> <a href="#"><img src="images/userpic.gif" width="40" height="40" alt="" class="userpic" /></a>
+    <div class="comment"> <a href="#"><img src="{{asset('public/front_end_asset/images/userpic.gif')}}" width="40" height="40" alt="" class="userpic" /></a>
         <p><a href="#">Owner</a> Says:<br />
             April 20th, 2009 at 3:21 pm</p>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo.</p>
     </div>
-    <div class="comment"> <a href="#"><img src="images/userpic.gif" width="40" height="40" alt="" class="userpic" /></a>
+    <div class="comment"> <a href="#"><img src="{{asset('public/front_end_asset/images/userpic.gif')}}" width="40" height="40" alt="" class="userpic" /></a>
         <p><a href="#">admin</a> Says:<br />
             April 20th, 2009 at 2:17 pm</p>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.</p>
@@ -41,10 +40,11 @@
                 <textarea id="message" name="message" rows="8" cols="50"></textarea>
             </li>
             <li>
-                <input type="image" name="imageField" id="imageField" src="images/submit.gif" class="send" />
+                <input type="image" name="imageField" id="imageField" src="{{asset('public/front_end_asset/images/submit.gif')}}" class="send" />
                 <div class="clr"></div>
             </li>
         </ol>
     </form>
 </div>
-    @endsection;
+
+  @endsection

@@ -16,8 +16,8 @@
                 <ul>
                     <li class="active"><a href="{{URL::to('/')}}">Home</a></li>
                     <li><a href="{{URL::to('/support')}}">Support</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="{{URL::to('/about')}}">About Us</a></li>
+                    <li><a href="{{URL::to('/blog')}}">Blog</a></li>
                     <li><a href="{{URL::to('/contact')}}">Contact Us</a></li>
                 </ul>
             </div>
@@ -43,7 +43,10 @@
                @yield('main_content')
                 <div class="clr"></div>
             </div>
-            <div class="sidebar">
+
+
+
+        <!--    <div class="sidebar">
                 <div class="gadget">
                     <h2 class="star">Sidebar Menu</h2>
                     <ul class="sb_menu">
@@ -73,6 +76,9 @@
                     </ul>
                 </div>
             </div>
+            -->
+            @yield('sidebar')
+
             <div class="clr"></div>
         </div>
     </div>

@@ -17,7 +17,9 @@ Route::get('/', function () {
 */
 Route::get('/','WelcomeController@index');
 Route::get('/contact','WelcomeController@contact');
+Route::get('/about','WelcomeController@about');
 Route::get('/blog_read_more','WelcomeController@blog_read_more');
+Route::get('/blog','WelcomeController@blog');
 //Route::get('/user', 'UserController@index');
 Route::get('/support','WelcomeController@support');
 
