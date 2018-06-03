@@ -19,6 +19,7 @@
                     <li><a href="{{URL::to('/about')}}">About Us</a></li>
                     <li><a href="{{URL::to('/blog')}}">Blog</a></li>
                     <li><a href="{{URL::to('/contact')}}">Contact Us</a></li>
+                    <li><a href="{{URL::to('/login')}}">Admin Login</a></li>
                 </ul>
             </div>
             <div class="clr"></div>

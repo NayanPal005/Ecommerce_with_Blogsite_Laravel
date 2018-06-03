@@ -23,3 +23,14 @@ Route::get('/blog','WelcomeController@blog');
 //Route::get('/user', 'UserController@index');
 Route::get('/support','WelcomeController@support');
 
+/*
+ * Start Admin Panel
+ */
+Route::get('/login','AdminController@index');
+Route::get('/admin','AdminController@index');
+Route::post('/admin-login','AdminController@admin_login_check');
+
+/*
+ * End Admin Panel
+ */
+
